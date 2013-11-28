@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery.optimumfit.js example</title>
+    <link rel="stylesheet" type="text/css" href="jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.min.css"/>
+    <style>
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 50px;
+            border: 1px solid black;
+        }
+
+        .coloured-box {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="coloured-box">
+
+        </div>
+    </div>
+
+    <script src="../lib/3rd-party/jquery/jquery.min.js"></script>
+    <script src="../lib/3rd-party/hyperlounge/jquery.optimumfit.js"></script>
+    <script src="jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.container').resizable();
+
+            $('.coloured-box').optimumFit();
+        });
+    </script>
+</body>
+</html>
